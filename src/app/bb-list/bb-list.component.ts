@@ -4,6 +4,7 @@ import 'rxjs/add/operator/map';
 import 'rxjs/add/operator/do';
 import { Http, Response, Headers } from '@angular/http';
 import { Observable } from 'rxjs/Observable';
+import { BBTeam } from './bb-list-team.component';
 
 @Component({
   selector: 'app-bb-list',
@@ -34,7 +35,7 @@ export class BbListComponent implements OnInit {
 
   private getAllActionUrl: string;
   private getTeamPlayersUrl: string;
-
+  
   constructor(private _http: Http) { 
     this.getAllActionUrl = 'http://bblistapi.azurewebsites.net/teams/getteamtypes'; 
     this.getTeamPlayersUrl = 'http://bblistapi.azurewebsites.net/teams/getteamtypeinfo';
