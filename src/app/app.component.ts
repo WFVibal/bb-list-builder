@@ -50,7 +50,7 @@ export class AppComponent implements OnInit {
     let disposable = this.dialogService.addDialog(BbPlayerModalComponent, {
       title: 'Add new ' + this.selectedTeamType + ' player',
       message: 'Confirm message',
-      playerType: pt,
+      playerType: pt
     })
       // .subscribe((isConfirmed) => {
       //   //We get dialog result

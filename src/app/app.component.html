@@ -49,13 +49,12 @@
           <td colspan="9">
             <div class="btn-group" dropdown>
                 <button dropdownToggle class="btn btn-secondary dropdown-toggle" type="button" id="dropdownPlayerTypeMenuButton" data-toggle="dropdown"
-                    aria-haspopup="true" aria-expanded="false" [(ngModel)]="selectedTeamType" ngDefaultControl>
-               Add Player <span class="caret"></span>
+                    aria-haspopup="true" aria-expanded="false" [(ngModel)]="selectedTeamType" ngDefaultControl>Add Player <span class="caret"></span>
               </button>
                 <ul *dropdownMenu class="dropdown-menu" role="menu">
                     <li role="menuitem" *ngFor="let pt of teamServiceTypeList.Player_Types" (click)=showConfirm(pt)><a class="dropdown-item">{{pt.Position_Name}}</a></li>
                     <li class="divider dropdown-divider"></li>
-                    <li role="menuitem" *ngFor="let spt of teamServiceTypeList.Special_Players"><a class="dropdown-item">{{spt.Type_Name}}</a></li>
+                    <li role="menuitem" *ngFor="let spt of teamServiceTypeList.Special_Players" (click)=showConfirm(spt)><a class="dropdown-item">{{spt.Type_Name}}</a></li>
                 </ul>
             </div>
           </td>

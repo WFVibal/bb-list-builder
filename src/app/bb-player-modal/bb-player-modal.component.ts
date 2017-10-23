@@ -11,7 +11,8 @@ export interface ConfirmModel {
 
 @Component({  
     selector: 'confirm',
-    templateUrl: './bb-player-modal.component.html'
+    templateUrl: './bb-player-modal.component.html',
+    styleUrls: ['./bb-player-modal.component.css']
 })
 
 export class BbPlayerModalComponent extends DialogComponent<ConfirmModel, boolean> implements ConfirmModel {

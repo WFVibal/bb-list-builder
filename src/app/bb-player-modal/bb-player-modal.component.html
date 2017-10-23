@@ -7,42 +7,42 @@
     <div class="modal-body">
         <form>
           <div class="input-group">
-            <span class="input-group-addon">Name</span>
+            <span class="input-group-addon form-addon">Name</span>
             <input id="name" type="text" class="form-control" name="msg">
           </div>
 
           <div class="input-group">
-            <span class="input-group-addon">Number</span>
+            <span class="input-group-addon form-addon">Number</span>
             <input id="jersey-num" type="text" class="form-control" name="msg">
           </div>
 
           <div class="input-group">
-              <span class="input-group-addon">Position</span>
+              <span class="input-group-addon form-addon">Position</span>
               <input id="value" type="text" class="form-control" name="msg" value={{playerType.Position_Name}} disabled>
             </div>
 
           <div class="input-group">
-            <span class="input-group-addon">Cost</span>
+            <span class="input-group-addon form-addon">Cost</span>
             <input id="value" type="text" class="form-control" name="msg" value={{playerType.Value}} disabled>
           </div>
 
           <div class="input-group">
-            <span class="input-group-addon">Movement</span>
+            <span class="input-group-addon form-addon">Movement</span>
             <input id="_ma" type="text" class="form-control" name="msg" [disabled]="!playerType.Player_ID" value={{playerType.Movement}}>
           </div>
 
           <div class="input-group">
-            <span class="input-group-addon">Strength</span>
+            <span class="input-group-addon form-addon">Strength</span>
             <input id="_st" type="text" class="form-control" name="msg" [disabled]="!playerType.Player_ID" value={{playerType.Strength}}>
           </div>
 
           <div class="input-group">
-            <span class="input-group-addon">Agility</span>
+            <span class="input-group-addon form-addon">Agility</span>
             <input id="_ag" type="text" class="form-control" name="msg" [disabled]="!playerType.Player_ID" value={{playerType.Agility}}>
           </div>
 
           <div class="input-group">
-            <span class="input-group-addon">Armor</span>
+            <span class="input-group-addon form-addon">Armor</span>
             <input id="_av" type="text" class="form-control" name="msg" [disabled]="!playerType.Player_ID" value={{playerType.Armor}}>
           </div>
 
